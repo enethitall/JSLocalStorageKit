@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JSLocalStorageKit_Example' do
+  pod 'JSLocalStorageKit', :path => '../'
+
+  target 'JSLocalStorageKit_Tests' do
+    inherit! :search_paths
+
+#    pod 'FBSnapshotTestCase'
+  end
+end
